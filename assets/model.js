@@ -112,7 +112,7 @@ function add_class_in_scrolling(target) {
 $(window).on('load scroll', function() {
   add_class_in_scrolling($('.header'));
   add_class_in_scrolling($('.area__map'));
-  add_class_in_scrolling($('.area__spot1'));
+  add_class_in_scrolling($('.area__spot1--opacity'));
   add_class_in_scrolling($('.area__spot2'));
   add_class_in_scrolling($('.area__spot3'));
   add_class_in_scrolling($('.cafe__blc'));

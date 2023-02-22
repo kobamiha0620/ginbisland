@@ -367,6 +367,7 @@
     padding-right: 9vw;
     padding-left: 9vw;
     margin-bottom: 21vw;
+    padding-bottom: 10vw;
   }
   .area .area__spot1--chara1 {
     position: absolute;
@@ -1030,7 +1031,7 @@
 /*ナビゲーションの縦スクロール*/
 #g-nav.panelactive #g-nav-list {
   width: 100%;
-  padding: 120px 0 0 35px;
+  padding: 100px 0 0 35px;
   -webkit-overflow-scrolling: touch;
 }
 @media screen and (max-width: 768px) {
@@ -1759,11 +1760,11 @@ html {
 }
 
 body {
-  font-family: "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
+  font-family: "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "M PLUS Rounded 1c", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
 }
 
 h3 {
-  font-family: "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
+  font-family: "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "M PLUS Rounded 1c", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
 }
 
 .blc__inner {
@@ -1810,15 +1811,15 @@ h3 {
   animation-duration: 2s;
 }
 
-.area__spot1 .header__ttl, .area__spot1 .header__subttl {
+.area__spot1--opacity .area__spot1--blc-small1, .area__spot1--opacity .area__spot1--blc-small2 {
   opacity: 0;
 }
-.area__spot1.is-show .area__spot1--blc-small1 {
+.area__spot1--opacity.is-show .area__spot1--blc-small1 {
   opacity: 1;
   animation-name: fadeUpAnime;
   animation-duration: 2s;
 }
-.area__spot1.is-show .area__spot1--blc-small2 {
+.area__spot1--opacity.is-show .area__spot1--blc-small2 {
   opacity: 1;
   animation-name: fadeUpAnime;
   animation-duration: 3s;

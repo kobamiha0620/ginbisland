@@ -55,7 +55,7 @@
 /*ナビゲーションの縦スクロール*/
 #g-nav.panelactive #g-nav-list {
     width: 100%;
-    padding: 120px 0 0 35px;
+    padding: 100px 0 0 35px;
     -webkit-overflow-scrolling: touch;
     @media screen and (max-width: var.$spbp) {
         padding: 25vw 0 0 8vw;
