@@ -1,0 +1,76 @@
+<!-- <%
+// 以下の設定値を記入のこと
+
+var pageinit = {
+  title : '' ,
+  keywords : '' ,
+  description : '' ,
+  ogurl : '' ,
+  path: '',
+  ogimage : '' ,
+  path : '' ,
+  category : ['about'] ,
+  pagename : '',
+  css: [],
+  js:[],
+  jsfunc:['setPhotoChanger ();','startScroll ();','setVideo();']
+};
+%> -->
+
+
+    
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="canonical" href="https://tabekkoland.jp">
+
+  <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/picturefill/3.0.3/picturefill.min.js"></script>
+
+  <link rel="stylesheet" href="./assets/style.css">
+  <meta name="description" content="誕生から45周年―「たべっ子どうぶつ」史上最大イベント『たべっ子どうぶつLAND』開催決定！"/>
+
+  <meta property="og:url" content="https://tabekkoland.jp"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:title" content="たべっ子どうぶつ LAND - ギンビス"/>
+  <meta property="og:description" content="誕生から45周年―「たべっ子どうぶつ」史上最大イベント『たべっ子どうぶつLAND』開催決定！
+  コンセプトカフェから最新デジタルアトラクションまで「たべっ子どうぶつ」を楽しみ尽くせるスペシャル空間をご用意！"/>
+  <meta property="og:site_name" content="たべっ子どうぶつ LAND - ギンビス"/>
+  <meta property="og:image" content="./img/ogp.png"/>
+
+  <title>たべっ子どうぶつ LAND - ギンビス</title>
+</head>
+<body>
+
+  <%- include('./module/header'); %>
+
+  <main class="main">
+    <%- include('./module/area'); %>
+    <%- include('./module/cafe'); %>
+
+    <%- include('./module/goods'); %>
+
+    <%- include('./module/tiket'); %>
+    <%- include('./module/access'); %>
+    <%- include('./module/faq'); %>
+
+  </main>
+
+  <%- include('./module/footer'); %>
+
+  <script src="./assets/model.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+      
+
+    

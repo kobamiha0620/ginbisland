@@ -1,0 +1,152 @@
+@use "./module/variable"as var;
+
+@use "./module/*";
+html {
+	scroll-behavior: auto;
+}
+body {
+    font-family:"ヒラギノ丸ゴ Pro W4","ヒラギノ丸ゴ Pro","Hiragino Maru Gothic Pro","ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","HG丸ｺﾞｼｯｸM-PRO","HGMaruGothicMPRO";
+}
+h3{
+    font-family:"ヒラギノ丸ゴ Pro W4","ヒラギノ丸ゴ Pro","Hiragino Maru Gothic Pro","ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","HG丸ｺﾞｼｯｸM-PRO","HGMaruGothicMPRO";
+}
+.blc{
+    &__inner{
+        width: var.$pcbp;
+        margin: 0 auto;
+    }
+}
+
+
+
+
+.header{
+    .header__ttl, .header__subttl{
+        opacity: 0;
+    }
+    &.is-show {
+        .header__ttl{
+            opacity: 1;
+            animation-name: fadeUpAnime;
+            animation-duration: 2s;
+        } 
+        .header__subttl{
+            opacity: 1;
+            animation-name: fadeUpAnime;
+            animation-duration: 3s;
+        }
+    } 
+}
+
+
+.area__map--wrapper{
+    .area__map{
+        opacity: 0;
+    }
+    &.is-show {
+        .area__map{
+            opacity: 1;
+            animation-name: fadeUpAnime;
+            animation-duration: 2s;
+        } 
+
+    } 
+}
+
+.area__spot1{
+    .header__ttl, .header__subttl{
+        opacity: 0;
+    }
+    &.is-show {
+        .area__spot1--blc-small1{
+            opacity: 1;
+            animation-name: fadeUpAnime;
+            animation-duration: 2s;
+        } 
+        .area__spot1--blc-small2{
+            opacity: 1;
+            animation-name: fadeUpAnime;
+            animation-duration: 3s;
+        }
+    } 
+}
+
+.area__spot2{
+    .area__spot1--blc{
+        opacity: 0;
+    }
+    &.is-show {
+        .area__spot1--blc{
+            opacity: 1;
+            animation-name: fadeUpAnime;
+            animation-duration: 2s;
+        } 
+
+    } 
+}
+.area__spot3{
+    .area__spot1--blc{
+        opacity: 0;
+    }
+    &.is-show {
+        .area__spot1--blc{
+            opacity: 1;
+            animation-name: fadeUpAnime;
+            animation-duration: 3s;
+        } 
+
+    } 
+}
+
+.cafe__blc{
+    .cafe__test--img{
+        opacity: 0;
+    }
+    &.is-show {
+        .cafe__test--img{
+            opacity: 1;
+            animation-name: fadeUpAnime;
+            animation-duration: 3s;
+        } 
+
+    } 
+}
+.fadein01, .fadein02, .fadein03, .fadein04, .fadein05, .fadein06, .fadein07, .fadein08{
+    opacity: 0;
+    transition: all 800ms;
+    transform : translate(0, 0);
+    &.scrollin{
+        opacity: 1;
+        transform : translate(0, 0);
+    }
+}
+
+//フェイドインアニメ
+@keyframes fadeUpAnime {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes rotate-anime2 {
+    0%  {transform: rotate(180deg);}
+    100%  {transform: rotate(0);}
+  }
+@keyframes rotate-anime {
+    0%  {transform: rotate(0);}
+    100%  {transform: rotate(180deg);}
+  }
+@media screen and (max-width: var.$spbp) {
+    .blc{
+        &__inner{
+            width: 100%;
+            position: relative;
+        }
+    }
+}
+
+@include var.webpBg('.faq__ttl', var.$imgpath+'ttl_faq', 'png');

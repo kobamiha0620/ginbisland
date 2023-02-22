@@ -1,0 +1,90 @@
+@use "./module/variable"as var;
+
+
+
+.goods{
+    background-color: var.$yel;
+    .blc__inner{
+        padding: 57px 0;
+        position: relative;
+    }
+
+    &__ttl{
+        text-indent: -9999px;
+        white-space: nowrap;
+        width: 343px;
+        height: 52px;
+        background-size: 100% auto;
+        margin: 0 auto 30px;
+    }
+    &__list{
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        li{
+            width: 154px;
+            max-width: 154px;
+            margin-right: 25px;
+            margin-bottom: 25px;
+            &:nth-child(4n){
+                margin-right: 0;
+            }
+        }
+        &--img{
+            width: 100%;
+            height: 154px;
+            background-color: #C3C3C3;
+            margin: 0 0 10px;
+        }
+        &--name{
+            @include var.fz(14);
+            margin: 0 0 10px;
+            line-height: 1.5;
+        }
+        &--price{
+            @include var.fz(14);
+            line-height: 1;
+            margin: 0;
+            span{
+                font-size: 0.8em;
+            }
+        }
+    }
+    //goods
+    @media screen and (max-width: var.$spbp) {
+        .blc__inner{
+            padding: 16.5vw 6.66vw;
+        }
+        &__ttl{
+            margin: 0 auto 5.8vw;
+        }
+        &__list{
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: flex-start;
+            flex-wrap: wrap;
+            li{
+                width: 40vw;
+                max-width: 40vw;
+                margin-right: 6.66vw;
+                margin-bottom: 10vw;
+                &:nth-child(2n){
+                    margin-right: 0;
+                }
+            }
+            &--img{
+                width: 100%;
+                height: 154px;
+                margin: 0 0 10px;
+            }
+
+        }
+        
+    }
+
+}
+
+@include var.webpBg('.goods__ttl', var.$imgpath+'ttl_goods', 'png');
