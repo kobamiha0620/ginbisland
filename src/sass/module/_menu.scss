@@ -63,14 +63,14 @@
 }
 
 /*ナビゲーション*/
-#g-nav ul {
-    /*ナビゲーション天地中央揃え*/
-    // position: absolute;
-    // z-index: 999;
-    // top: 50%;
-    // left: 50%;
-    // transform: translate(-50%, -50%);
-}
+// #g-nav ul {
+//     /*ナビゲーション天地中央揃え*/
+//     // position: absolute;
+//     // z-index: 999;
+//     // top: 50%;
+//     // left: 50%;
+//     // transform: translate(-50%, -50%);
+// }
 
 
 /*========= ボタンのためのCSS ===============*/
@@ -185,12 +185,12 @@ $background-color_1: #666;
     }
 
     &__details{
-        // background: #FFF;
-        // border: solid 5px #000;
-        // position: relative;
-        // padding: 26px 20px 17px;
-        // display: inline-block;
-        // border-radius: 30px;
+        background: #FFF;
+        border: solid 5px #000;
+        position: relative;
+        padding: 26px 20px 17px;
+        display: inline-block;
+        border-radius: 30px;
         margin: 0 auto 40px;
         &--wrap{
             display: flex;
@@ -381,6 +381,11 @@ $background-color_1: #666;
             width: 87.2vw;
             br{
                 display: none;
+            }
+            span{
+                br{
+                    display: block;
+                }
             }
         }
         &__subttl{

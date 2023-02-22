@@ -8,7 +8,15 @@
         padding: 57px 0;
         position: relative;
     }
-
+    &__scrollimg{
+        width: 264px;
+        height: 165px;
+        overflow-y: scroll;
+        img{
+        width: 100%;
+        height: auto;
+        }
+    }
     &__ttl{
         text-indent: -9999px;
         white-space: nowrap;
@@ -19,22 +27,28 @@
     }
     &__map{
         margin: 0 auto 100px;
-        width: 500px;
-        height: 350px;
-        background-color: #C3C3C3;
+        background-color: #FFF;
+        border: solid 5px #000;
+        border-radius: 20px;
+        padding: 60px 90px 35px;
+
+        img{
+            width: 100%;
+            height: auto;
+        }
     }
     &__spot{
         position: relative;
         background-color: #FFF;
         border: solid 5px #000;
         border-radius: 20px;
-        padding: 80px 35px 36px;
+        padding: 80px 28px 36px;
         &--wrapper{
             display: flex;
             justify-content: space-between;
             .area__spot{
-                width: 325px;
-                max-width: 325px;
+                width: 330px;
+                max-width: 330px;
             }
         }
         &--ttl{
@@ -60,6 +74,16 @@
         padding-right: 70px;
         padding-left: 70px;
         margin: 0 0 72px;
+        &--topblc{
+            margin: 40px auto 0;
+            &-img{
+                width: 100%;
+                img{
+                    width: 100%;
+                    height: auto;
+                }
+            }
+        }
         &--chara1{
             position: absolute;
             width: 88px;
@@ -84,14 +108,20 @@
             display: flex;
             justify-content: space-between;
             &-small{
-                max-width: 250px;
+                max-width: 264px;
             }
             &-img{
-                background-color: #C3C3C3;
-                width: 250px;
+                background-color: #F9D7E6;
+                width: 264px;
                 height: 165px;
+                max-width: 264px;
+                max-height: 165px;
                 margin: 0 auto 16px;
                 position: relative;
+                img{
+                    width: 100%;
+                    height: auto;
+                }
                 &test{
                     margin-top: 8px;
                     width: 180px;
@@ -102,9 +132,15 @@
                     transform: translate(-50%, -50%);
                     -webkit-transform: translate(-50%, -50%);
                     -ms-transform: translate(-50%, -50%);
+
+                }
+                &main{
+                    max-width: 264px;
+                    max-height: 165px;
+                    overflow: scroll;
                     img{
-                        width: 100%;
-                        height: auto;
+ 
+                        display: block;
                     }
                 }
             }
@@ -115,9 +151,14 @@
             }
             &-txt2{
                 text-align: center;
-                @include var.fz(14);
+                @include var.fz(13);
                 margin: 0 auto;
                 line-height: 1.7;
+                a{
+                    color: #00A0E9;
+                    display: block;
+                    margin-top: 10px;
+                }
             }
             &-note{
                 @include var.fz(12);
@@ -170,10 +211,13 @@
         &__ttl{
             margin: 0 auto 5.8vw;
         }
+
         &__map{
             margin: 0 auto 21vw;
-            width: 80vw;
-            height: 350px;
+            width: 100%;
+            border-radius: 20px;
+            padding: 10vw 5vw 5vw;
+
         }
         &__spot{
             padding: 21vw 9vw 0;

@@ -44,12 +44,16 @@
         font-size: 0;
         a{
             background-size: 100% auto;
-            white-space: nowrap;
-            text-indent: -9999px;
             display: block;
             width: 289px;
             height: 88px;
             margin: 0 auto 18px;
+            @include var.fz(12);
+            text-decoration: none;
+            color: #000;
+            padding-left: 87px;
+            padding-top: 26px;
+            font-weight: bold;
             &:hover{
                 opacity: 0.7;
             }
@@ -82,5 +86,5 @@
 
 
 @include var.webpBg('.footer__image', var.$imgpath+'footer_img', 'png');
-@include var.webpBg('.footer__sns--tw', var.$imgpath+'tw', 'png');
+@include var.webpBg('.footer__sns--tw', var.$imgpath+'bg_twitter', 'png');
 @include var.webpBg('.footer__sns--ig', var.$imgpath+'ig', 'png');

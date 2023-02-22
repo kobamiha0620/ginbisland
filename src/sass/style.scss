@@ -17,7 +17,20 @@ h3{
     }
 }
 
-
+.pc{
+    display: block;
+}
+.sp{
+    display: none;
+}
+@media screen and (max-width: var.$spbp) {
+    .pc{
+        display: none;
+    }
+    .sp{
+        display: block;
+    }
+}
 
 
 .header{
@@ -39,12 +52,12 @@ h3{
 }
 
 
-.area__map--wrapper{
-    .area__map{
+.area__map{
+    .area__map--img{
         opacity: 0;
     }
     &.is-show {
-        .area__map{
+        .area__map--img{
             opacity: 1;
             animation-name: fadeUpAnime;
             animation-duration: 2s;
@@ -104,6 +117,33 @@ h3{
     }
     &.is-show {
         .cafe__test--img{
+            opacity: 1;
+            animation-name: fadeUpAnime;
+            animation-duration: 3s;
+        } 
+
+    } 
+}
+.goods__test{
+    .goods__test--img{
+        opacity: 0;
+    }
+    &.is-show {
+        .goods__test--img{
+            opacity: 1;
+            animation-name: fadeUpAnime;
+            animation-duration: 3s;
+        } 
+
+    } 
+} 
+
+.area__spot1--topblc{
+    .area__spot1--topblc--wrapper{
+        opacity: 0;
+    }
+    &.is-show {
+        .area__spot1--topblc--wrapper{
             opacity: 1;
             animation-name: fadeUpAnime;
             animation-duration: 3s;

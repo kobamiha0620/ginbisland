@@ -142,6 +142,15 @@
   padding: 57px 0;
   position: relative;
 }
+.area__scrollimg {
+  width: 264px;
+  height: 165px;
+  overflow-y: scroll;
+}
+.area__scrollimg img {
+  width: 100%;
+  height: auto;
+}
 .area__ttl {
   text-indent: -9999px;
   white-space: nowrap;
@@ -152,24 +161,29 @@
 }
 .area__map {
   margin: 0 auto 100px;
-  width: 500px;
-  height: 350px;
-  background-color: #C3C3C3;
+  background-color: #FFF;
+  border: solid 5px #000;
+  border-radius: 20px;
+  padding: 60px 90px 35px;
+}
+.area__map img {
+  width: 100%;
+  height: auto;
 }
 .area__spot {
   position: relative;
   background-color: #FFF;
   border: solid 5px #000;
   border-radius: 20px;
-  padding: 80px 35px 36px;
+  padding: 80px 28px 36px;
 }
 .area__spot--wrapper {
   display: flex;
   justify-content: space-between;
 }
 .area__spot--wrapper .area__spot {
-  width: 325px;
-  max-width: 325px;
+  width: 330px;
+  max-width: 330px;
 }
 .area__spot--ttl {
   position: absolute;
@@ -193,6 +207,16 @@
   padding-right: 70px;
   padding-left: 70px;
   margin: 0 0 72px;
+}
+.area .area__spot1--topblc {
+  margin: 40px auto 0;
+}
+.area .area__spot1--topblc-img {
+  width: 100%;
+}
+.area .area__spot1--topblc-img img {
+  width: 100%;
+  height: auto;
 }
 .area .area__spot1--chara1 {
   position: absolute;
@@ -219,14 +243,20 @@
   justify-content: space-between;
 }
 .area .area__spot1--blc-small {
-  max-width: 250px;
+  max-width: 264px;
 }
 .area .area__spot1--blc-img {
-  background-color: #C3C3C3;
-  width: 250px;
+  background-color: #F9D7E6;
+  width: 264px;
   height: 165px;
+  max-width: 264px;
+  max-height: 165px;
   margin: 0 auto 16px;
   position: relative;
+}
+.area .area__spot1--blc-img img {
+  width: 100%;
+  height: auto;
 }
 .area .area__spot1--blc-imgtest {
   margin-top: 8px;
@@ -239,9 +269,13 @@
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
 }
-.area .area__spot1--blc-imgtest img {
-  width: 100%;
-  height: auto;
+.area .area__spot1--blc-imgmain {
+  max-width: 264px;
+  max-height: 165px;
+  overflow: scroll;
+}
+.area .area__spot1--blc-imgmain img {
+  display: block;
 }
 .area .area__spot1--blc-txt {
   text-align: center;
@@ -250,9 +284,14 @@
 }
 .area .area__spot1--blc-txt2 {
   text-align: center;
-  font-size: 0.875rem;
+  font-size: 0.8125rem;
   margin: 0 auto;
   line-height: 1.7;
+}
+.area .area__spot1--blc-txt2 a {
+  color: #00A0E9;
+  display: block;
+  margin-top: 10px;
 }
 .area .area__spot1--blc-note {
   font-size: 0.75rem;
@@ -299,8 +338,9 @@
   }
   .area__map {
     margin: 0 auto 21vw;
-    width: 80vw;
-    height: 350px;
+    width: 100%;
+    border-radius: 20px;
+    padding: 10vw 5vw 5vw;
   }
   .area__spot {
     padding: 21vw 9vw 0;
@@ -440,8 +480,8 @@
   margin: 0;
 }
 .cafe__test {
-  background-color: #C3C3C3;
-  height: 600px;
+  background-color: #F9D7E6;
+  height: 200px;
   position: relative;
   width: 100%;
   margin: 0 auto 10px;
@@ -770,12 +810,16 @@
 }
 .footer__sns a {
   background-size: 100% auto;
-  white-space: nowrap;
-  text-indent: -9999px;
   display: block;
   width: 289px;
   height: 88px;
   margin: 0 auto 18px;
+  font-size: 0.75rem;
+  text-decoration: none;
+  color: #000;
+  padding-left: 87px;
+  padding-top: 26px;
+  font-weight: bold;
 }
 .footer__sns a:hover {
   opacity: 0.7;
@@ -808,11 +852,11 @@
 }
 
 .is-no-webp .footer__sns--tw {
-  background-image: url(../img/tw.png);
+  background-image: url(../img/bg_twitter.png);
 }
 
 .is-webp .footer__sns--tw {
-  background-image: url(../img/tw.webp);
+  background-image: url(../img/bg_twitter.webp);
 }
 
 .is-no-webp .footer__sns--ig {
@@ -829,6 +873,26 @@
 .goods .blc__inner {
   padding: 57px 0;
   position: relative;
+}
+.goods__test {
+  background-color: #F9D7E6;
+  height: 200px;
+  position: relative;
+  width: 100%;
+  margin: 0 auto 10px;
+}
+.goods__test--img {
+  width: 310px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+.goods__test--img img {
+  width: 100%;
+  height: auto;
 }
 .goods__ttl {
   text-indent: -9999px;
@@ -857,7 +921,7 @@
 .goods__list--img {
   width: 100%;
   height: 154px;
-  background-color: #C3C3C3;
+  background-color: #F9D7E6;
   margin: 0 0 10px;
 }
 .goods__list--name {
@@ -976,10 +1040,6 @@
 }
 
 /*ナビゲーション*/
-#g-nav ul {
-  /*ナビゲーション天地中央揃え*/
-}
-
 /*========= ボタンのためのCSS ===============*/
 /*×に変化*/
 .navBtn {
@@ -1078,6 +1138,12 @@
   color: #000;
 }
 .header__details {
+  background: #FFF;
+  border: solid 5px #000;
+  position: relative;
+  padding: 26px 20px 17px;
+  display: inline-block;
+  border-radius: 30px;
   margin: 0 auto 40px;
 }
 .header__details--wrap {
@@ -1258,6 +1324,9 @@
   .header__ttl br {
     display: none;
   }
+  .header__ttl span br {
+    display: block;
+  }
   .header__subttl {
     text-align: left;
     width: 87.2vw;
@@ -1398,7 +1467,7 @@ body {
   padding-top: 68px;
 }
 .tiket__tokuten--img {
-  background-color: #C3C3C3;
+  background-color: #F9D7E6;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1702,6 +1771,22 @@ h3 {
   margin: 0 auto;
 }
 
+.pc {
+  display: block;
+}
+
+.sp {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .pc {
+    display: none;
+  }
+  .sp {
+    display: block;
+  }
+}
 .header .header__ttl, .header .header__subttl {
   opacity: 0;
 }
@@ -1716,10 +1801,10 @@ h3 {
   animation-duration: 3s;
 }
 
-.area__map--wrapper .area__map {
+.area__map .area__map--img {
   opacity: 0;
 }
-.area__map--wrapper.is-show .area__map {
+.area__map.is-show .area__map--img {
   opacity: 1;
   animation-name: fadeUpAnime;
   animation-duration: 2s;
@@ -1761,6 +1846,24 @@ h3 {
   opacity: 0;
 }
 .cafe__blc.is-show .cafe__test--img {
+  opacity: 1;
+  animation-name: fadeUpAnime;
+  animation-duration: 3s;
+}
+
+.goods__test .goods__test--img {
+  opacity: 0;
+}
+.goods__test.is-show .goods__test--img {
+  opacity: 1;
+  animation-name: fadeUpAnime;
+  animation-duration: 3s;
+}
+
+.area__spot1--topblc .area__spot1--topblc--wrapper {
+  opacity: 0;
+}
+.area__spot1--topblc.is-show .area__spot1--topblc--wrapper {
   opacity: 1;
   animation-name: fadeUpAnime;
   animation-duration: 3s;
