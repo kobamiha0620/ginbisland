@@ -114,7 +114,24 @@
         text-align: center;
         margin: 40px auto 0;
         @include var.fz(16);
+        &2{
+            margin: 10px auto;
+            text-align: center;
+            @include var.fz(14);
 
+
+        }
+        &--wrapper{
+            display: flex;
+            padding-left: 20px;
+            justify-content: center;
+        }
+        &--note{
+            text-indent: -1em;
+            padding-left: 1em;
+            margin: 0;
+            @include var.fz(12);
+        }
     }
     .faq__blc--arrow{
         animation: rotate-anime 0.3s ease-out 1;

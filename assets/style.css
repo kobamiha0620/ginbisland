@@ -682,6 +682,22 @@
   margin: 40px auto 0;
   font-size: 1rem;
 }
+.faq__inquiery2 {
+  margin: 10px auto;
+  text-align: center;
+  font-size: 0.875rem;
+}
+.faq__inquiery--wrapper {
+  display: flex;
+  padding-left: 20px;
+  justify-content: center;
+}
+.faq__inquiery--note {
+  text-indent: -1em;
+  padding-left: 1em;
+  margin: 0;
+  font-size: 0.75rem;
+}
 .faq .faq__blc--arrow {
   animation: rotate-anime 0.3s ease-out 1;
   transform: rotate(180deg);
