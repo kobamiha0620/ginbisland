@@ -2050,12 +2050,12 @@ h3 {
   animation-duration: 3s;
 }
 
-.fadein01, .fadein02, .fadein03, .fadein04, .fadein05, .fadein06, .fadein07, .fadein08, .fadein09 {
+.fadein01, .fadein02, .fadein03, .fadein04, .fadein05, .fadein06, .fadein07, .fadein08, .fadein09, .fadein10, .fadein11, .fadein12 {
   opacity: 0;
-  transition: all 600ms;
+  transition: all 700ms;
   transform: translate(0, 0);
 }
-.fadein01.scrollin, .fadein02.scrollin, .fadein03.scrollin, .fadein04.scrollin, .fadein05.scrollin, .fadein06.scrollin, .fadein07.scrollin, .fadein08.scrollin, .fadein09.scrollin {
+.fadein01.scrollin, .fadein02.scrollin, .fadein03.scrollin, .fadein04.scrollin, .fadein05.scrollin, .fadein06.scrollin, .fadein07.scrollin, .fadein08.scrollin, .fadein09.scrollin, .fadein10.scrollin, .fadein11.scrollin, .fadein12.scrollin {
   opacity: 1;
   transform: translate(0, 0);
 }

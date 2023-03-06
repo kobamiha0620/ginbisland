@@ -41,6 +41,10 @@ $(function(){
     $(this).toggleClass("open");
   });
 
+  $('#goodsAccordionBtn').on('click', function(){
+    console.log('test');
+      $('#goodsAccordion').slideToggle();
+  }); 
   //たぶ
   $('.tiket__tab .tab').on('click', function() {
     $('.tab, .panel').removeClass('active');
@@ -148,7 +152,10 @@ $(window).on('load scroll', function() {
                                             target.find('.fadein10').addClass('scrollin');
                                             setTimeout(function(){
                                                 target.find('.fadein11').addClass('scrollin');
-                                                
+                                                setTimeout(function(){
+                                                  target.find('.fadein12').addClass('scrollin');
+                                                  
+                                              },speed);
                                             },speed);
                                         },speed);
                                     },speed);

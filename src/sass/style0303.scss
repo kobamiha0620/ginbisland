@@ -151,9 +151,9 @@ h3{
 
     } 
 }
-.fadein01, .fadein02, .fadein03, .fadein04, .fadein05, .fadein06, .fadein07, .fadein08, .fadein09{
+.fadein01, .fadein02, .fadein03, .fadein04, .fadein05, .fadein06, .fadein07, .fadein08, .fadein09, .fadein10, .fadein11, .fadein12{
     opacity: 0;
-    transition: all 600ms;
+    transition: all 700ms;
     transform : translate(0, 0);
     &.scrollin{
         opacity: 1;
