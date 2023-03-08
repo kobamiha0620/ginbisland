@@ -4,7 +4,9 @@
 
 .goods {
     background-color: var.$yel;
-
+    .access__noteblc--txt{
+        text-align: center;
+    }
     .blc__inner {
         padding: 57px 0;
         position: relative;
@@ -75,7 +77,7 @@
         li {
             width: 160px;
             margin-right: 20px;
-            &:last-child {
+            &:nth-child(4n){
                 margin-right: 0;
             }
 
@@ -136,6 +138,8 @@
                     padding: 8px 16px;
                     font-weight: 900;
                     border-radius: 30px;
+
+
                 }
             }
             &-img{
@@ -150,7 +154,9 @@
 
     //goods
     @media screen and (max-width: var.$spbp) {
-
+        .access__noteblc--txt{
+            text-align: left;
+        }
         .blc__inner {
             padding: 16.5vw 6.66vw;
         }
@@ -205,6 +211,12 @@
                 &-img{
                     margin-top: 5vw;
 
+                }
+                &-ttl{
+                    span{
+                        @include var.fz(12);
+                        padding: 8px 10px;
+                    }
                 }
             }
         }
@@ -291,6 +303,79 @@
 
     }
 }
-
+.goods__list{
+    li{
+    }
+    button{
+        font-size: 0;
+        padding: 0;
+        border: none;
+        background-color: rgba(255,255,255, 0.0);
+    }
+}
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 8887;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.7);
+    transition: all 1s ease-in-out;
+  }
+  .modal-container .img {
+      background: #f1f1f1;
+      margin-bottom: 15px;
+  }
+  .modal-container p {
+      margin-bottom: 10px;
+  }
+  .modal-container p:last-child {
+      margin-bottom: 0;
+  }
+  .modal-content {
+      background: #FFF;
+      overflow-y: auto;
+      padding: 20px 25px;
+      width: 90%;
+      max-width: 800px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      max-height: 80vh;
+      animation: show 0.6s linear 0s;
+      filter: drop-shadow(0px 2px 6px #777);
+  }
+  .modal-top {
+      display: inline-block;
+      position: absolute;
+      right: 5px;
+      top: 5px;
+  }
+  .modal-close {
+      color: #FF0000;
+      text-decoration: none;
+      font-size: 2rem;
+      line-height: 1;
+      padding: 0 8px;
+  }
+  .modal-close:hover, .modal-close:focus {
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .modal-title {
+    color: #FFF;
+  }
+  @keyframes show{
+      from{
+          opacity: 0;
+      }
+      to{
+          opacity: 1;
+      }
+  }
 
 @include var.webpBg('.goods__ttl', var.$imgpath+'ttl_goods', 'png');

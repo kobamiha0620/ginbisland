@@ -22,7 +22,6 @@
   <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/picturefill/3.0.3/picturefill.min.js"></script>
 
-  <link rel="stylesheet" href="./assets/style0306.css">
   <meta name="description" content="誕生から45周年―「たべっ子どうぶつ」史上最大イベント『たべっ子どうぶつLAND』開催決定！"/>
 
   <meta property="og:url" content="https://tabekkoland.jp"/>
@@ -35,7 +34,14 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100;300;400;500;700;800;900&display=swap" rel="stylesheet">
-  
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+/>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+<link rel="stylesheet" href="./assets/style0306b.css">
+
   <title>たべっ子どうぶつ LAND - ギンビス</title>
 </head>
 <body>
@@ -96,13 +102,15 @@
         </div>
     </div>
     <h1 class="header__ttl">誕生から45周年<span><br></span>「たべっ子どうぶつ」史上最大イベント<br>『たべっ子どうぶつLAND』開催決定！</h1>
-    <p class="header__subttl">最新デジタルアトラクションからコンセプトカフェまで<br>「たべっ子どうぶつ」を楽しみ尽くせるスペシャル空間をご用意！</p>
+    <p class="header__subttl">最新デジタルアトラクションからコンセプトカフェまで<br>「たべっ子どうぶつ」を楽しみ尽くせるスペシャル空間をご用意！<br>
+        さらに東京ドームシティアトラクションズとのコラボも決定！<br>
+        観覧車「ビック・オー」にたべっ子どうぶつオリジナルラッピングが施されます。</p>
 </header>
 
   <main class="main">
     <section class="area" id="area">
     <div class="blc__inner">
-        <h2 class="area__ttl">会場アクセス</h2>
+        <h2 class="area__ttl">エリアマップ</h2>
         <div class="area__map">
             <div class="area__map--img">
                 <picture class="">
@@ -112,7 +120,78 @@
             </div>
         </div>
         <div class="area__spot area__spot1">
-            <h3 class="area__spot--ttl" id="spot1">SPOT1</h3>
+            <!-- <h3 class="area__spot--ttl" id="spot1">SPOT3</h3> -->
+            <p class="area__spot--txt">フォトスポット&キャラクターグリーティング</p>
+            <picture class="area__spot3--chara1">
+                <source srcset="./img/img_spot3.webp" type="image/webp">
+                <img src="./img/img_spot3.png" alt="SPOT3" width="226" height="446">
+            </picture>
+
+            <div class="area__spot1--blc">
+                <div class="area__spot1--blc-small3">
+                    <div class="area__spot1--blc-img2">
+                        <picture>
+                            <source srcset="./img/img_photospot.webp" type="image/webp">
+                            <img src="./img/img_photospot.jpg" alt="" width="1000" height="595">
+                        </picture>
+                    </div>
+                    <div>
+                        <!-- <p class="area__spot1--blc-txt">フォトスポット&<br>キャラクターグリーティング </p> -->
+                        <p class="area__spot1--blc-txt2">かわいい「たべっ子どうぶつ」の世界観を写真に収めることができる過去最大数のフォトスポットをご用意！
+                            特に、「たべっ子どうぶつ」のパッケージに入り、記念撮影ができる巨大箱型フォトスポットは“SNS映え“すること間違いなしです。
+                            そして今回もキャラクターグリーティングを開催。かわいいどうぶつさんたちに会いに来てくださいね♪
+                        </p>
+                        <!-- <p class="area__spot1--blc-note">※画像は一部フォトスポットのイメージです -->
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="area__spot--greeting">
+                <picture>
+                    <source srcset="./img/img_greeting.webp" type="image/webp">
+                    <img src="./img/img_greeting.jpg" alt="" width="1000" height="1964">
+                </picture>
+            </div>
+            <p class="area__spot1--blc-note">※混雑状況や入場人数によって、全てのお客様に写真撮影をお楽しみいただけない場合がございます。</p>
+            <p class="area__spot1--blc-note">※スケジュールが急遽変更となる場合がございます。</p>
+        </div>
+
+        <div class="area__spot area__spot2">
+            <!-- <h3 class="area__spot--ttl" id="spot2">SPOT1</h3> -->
+            <p class="area__spot--txt">プロジェクション<br>マッピング</p>
+            <picture class="area__spot2--chara1">
+                <source srcset="./img/img_saru.webp" type="image/webp">
+                <img src="./img/img_saru.png" alt="さるさん" width="348" height="448">
+            </picture>
+            <picture class="area__spot2--chara2">
+                <source srcset="./img/img_saru2.webp" type="image/webp">
+                <img src="./img/img_saru2.png" alt="さるさん" width="454" height="558">
+            </picture>
+            <div class="area__spot1--blc">
+                <div class="area__spot1--blc-small3">
+
+                    <div class="area__spot1--blc-img2">
+                        <picture class="pmap">
+                            <source srcset="./img/img_mapping2.webp" type="image/webp">
+                            <img src="./img/img_mapping2.jpg" alt="" width="1200" height="299">
+                        </picture>
+                    </div>
+                    <div>
+                        <p class="area__spot1--blc-txt">「たべっ子どうぶつ」<br>プロジェクションマッピング</p>
+                        <p class="area__spot1--blc-txt2">
+                            15ｍ×3.6ｍの巨大スクリーンに「たべっ子どうぶつ」の　どうぶつたちのかわいくて愉快な様子がプロジェクションマッピングとして映し出されます。ここでしか見られない、様々な「たべっ子どうぶつ」の世界観をお楽しみください。
+                        </p>
+                        <!-- <p class="area__spot1--blc-note">※画像はプロジェクションマッピングの一部イメージです</p> -->
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- <div class="area__spot area__spot1">
+            <h3 class="area__spot--ttl" id="spot3">SPOT3</h3>
             <p class="area__spot--txt">デジタルアトラクション</p>
             <picture class="area__spot1--chara1">
                 <source srcset="./img/img_usagi.webp" type="image/webp">
@@ -154,8 +233,7 @@
                             SQUARE」アプリをかざすと、どうぶつたちが動き出す不思議な体験をお楽しみいただけます。どうぶつたちが動く様子はスマートフォンで撮影も可能です。<br>
                             <a href="https://37ud.adj.st/open?adj_t=u4sd444&adj_deep_link=arsquare%3A%2F%2Fopen&adj_campaign=media-release&adj_adgroup=tabekko&adj_creative=app&adj_fallback=https%3A%2F%2Fplay.google.com%2Fstore%2Fapps%2Fdetails%3Fid%3Djp.softbank.mb.sbarservice%26hl%3Dja%26gl%3DUS"
                                 rel="noopener noreferrer" target="_blank">AR SQUAREアプリダウンロードはこちら</a></p>
-                        <p class="area__spot1--blc-note">※AR 対応機種<br>
-                            　iPhone：iOS 13.0以降（iPhone 8以降）／ Android：Android 9.0以降</p>
+                        <p class="area__spot1--blc-note">※AR 対応機種<br>iPhone：iOS 13.0以降（iPhone 8以降）／ Android：Android 9.0以降</p>
                         <p class="area__spot1--blc-note">※アプリケーションのダウンロード及びご利用には別途通信料がかかります</p>
                         <p class="area__spot1--blc-note">※ノベルティーには限りがあります</p>
                     </div>
@@ -188,70 +266,7 @@
                     </div>
                 </div>
             </div>
-        </div>
-
-        <div class="area__spot--wrapper">
-            <div class="area__spot area__spot2">
-                <h3 class="area__spot--ttl" id="spot2">SPOT2</h3>
-                <p class="area__spot--txt">プロジェクション<br>マッピング</p>
-                <picture class="area__spot2--chara1">
-                    <source srcset="./img/img_saru.webp" type="image/webp">
-                    <img src="./img/img_saru.png" alt="さるさん" width="348" height="448">
-                </picture>
-                <picture class="area__spot2--chara2">
-                    <source srcset="./img/img_saru2.webp" type="image/webp">
-                    <img src="./img/img_saru2.png" alt="さるさん" width="454" height="558">
-                </picture>
-                <div class="area__spot1--blc">
-                    <div class="area__spot1--blc-small">
-                        <div class="area__spot1--blc-img">
-                            <div class="area__spot1--blc-imgtest">
-                                <picture>
-                                    <source srcset="./img/comingsoon.webp" type="image/webp">
-                                    <img src="./img/comingsoon.png" alt="" width="1243" height="218">
-                                </picture>
-                            </div>
-                        </div>
-                        <p class="area__spot1--blc-txt">「たべっ子どうぶつ」<br>プロジェクションマッピング</p>
-                        <p class="area__spot1--blc-txt2">
-                            15ｍ×3.6ｍの巨大スクリーンに「たべっ子どうぶつ」の　どうぶつたちのかわいくて愉快な様子がプロジェクションマッピングとして映し出されます。ここでしか見られない、様々な「たべっ子どうぶつ」の世界観をお楽しみください。
-                        </p>
-                        <!-- <p class="area__spot1--blc-note">※画像はプロジェクションマッピングの一部イメージです</p> -->
-
-                    </div>
-
-                </div>
-            </div>
-            <div class="area__spot area__spot3">
-                <h3 class="area__spot--ttl" id="spot3">SPOT3</h3>
-                <p class="area__spot--txt">フォトスポット</p>
-                <picture class="area__spot3--chara1">
-                    <source srcset="./img/img_spot3.webp" type="image/webp">
-                    <img src="./img/img_spot3.png" alt="SPOT3" width="226" height="446">
-                </picture>
-
-                <div class="area__spot1--blc">
-                    <div class="area__spot1--blc-small">
-                        <div class="area__spot1--blc-img">
-                            <div class="area__spot1--blc-imgtest">
-                                <picture>
-                                    <source srcset="./img/comingsoon.webp" type="image/webp">
-                                    <img src="./img/comingsoon.png" alt="" width="1243" height="218">
-                                </picture>
-                            </div>
-                        </div>
-                        <p class="area__spot1--blc-txt"></p>
-                        <p class="area__spot1--blc-txt2">
-                            かわいい「たべっ子どうぶつ」の世界観を写真に収めることができるフォトスポットを会場内に多数ご用意。特に、「たべっ子どうぶつ」のパッケージに入り、記念撮影ができる巨大箱型フォトスポットは“SNS映え“すること間違いなしです。
-                        </p>
-                        <!-- <p class="area__spot1--blc-note">※画像は一部フォトスポットのイメージです -->
-                        </p>
-
-                    </div>
-
-                </div>
-            </div>
-        </div>
+        </div> -->
     </div>
 </section>
     <section class="cafe" id="cafe">
@@ -264,23 +279,23 @@
                 <img src="./img/img_kaba2.png" alt="" width="443" height="472">
             </picture>
 
-            <div class="cafe__test">
+            <!-- <div class="cafe__test">
                 <div class="cafe__test--img">
                     <picture >
                         <source srcset="./img/comingsoon.webp" type="image/webp" >
                         <img src="./img/comingsoon.png" alt="" width="1243" height="218">
                     </picture>
                 </div>
-            </div>
-            <!-- <div class="cafe__menu">
+            </div> -->
+            <div class="cafe__menu">
                 <picture>
-                <source srcset="./img/menu.webp" type="image/webp" >
-                <img src="./img/menu.jpg" alt="カフェメニュー" width="1400" height="1980">
+                <source srcset="./img/menu0307b.webp" type="image/webp" >
+                <img src="./img/menu0307b.jpg" alt="カフェメニュー" width="1414" height="2000">
                 </picture>
 
-            </div> -->
-            <!-- <p class="cafe__note">※内容は変更になる場合もございます。</p>
-            <p class="cafe__note">※食物アレルギーのあるお客様は、お問合せください。</p> -->
+            </div>
+            <p class="cafe__note">※内容は変更になる場合もございます。</p>
+            <p class="cafe__note">※食物アレルギーのあるお客様は、お問合せください。</p>
             <picture class="cafe__chara2">
                 <source srcset="./img/img_kaba.webp" type="image/webp" >
                 <img src="./img/img_kaba.png" alt="かばさん" width="415" height="520">
@@ -291,18 +306,16 @@
     <section class="goods" id="goods">
     <div class="blc__inner">
         <h2 class="goods__ttl">グッズ</h2>
-        <p class="goods__feature"><span class="goods__feature--before">before</span><span>会場販売グッズを<br>一部紹介</span><span
+        <p class="goods__feature"><span class="goods__feature--before">before</span><span>会場販売グッズを<br>ご紹介</span><span
                 class="goods__feature--after">after</span></p>
         <h3 class="goods__subttl2"><span>どうぶつたちの笑顔がかわいい！<br>45周年アニバーサリーグッズ</span></h3>
 
         <ul class="goods__list fadein_block">
-
-
             <li class="fadein01">
                 <div class="goods__list--img">
                     <picture>
-                        <source srcset="./img/goods3.webp" type="image/webp">
-                        <img src="./img/goods3.jpg" alt="" width="600" height="281">
+                        <source srcset="./img/goods3b.webp" type="image/webp">
+                        <img src="./img/goods3b.jpg" alt="" width="1000" height="1000">
                     </picture>
                 </div>
                 <p class="goods__list--name">スマホリング（9種）</p>
@@ -339,22 +352,61 @@
                 <p class="goods__list--name">巾着トート</p>
                 <!-- <p class="goods__list--price">¥10,000<span>（税込）</span></p> -->
             </li>
-
+            <li class="fadein05">
+                <div class="goods__list--img">
+                    <picture>
+                        <source srcset="./img/img_goods_new01.webp" type="image/webp">
+                        <img src="./img/img_goods_new01.jpg" alt="" width="1000" height="513">
+                    </picture>
+                </div>
+                <p class="goods__list--name">アクリルキーホルダー<br>（ランダム9種）</p>
+                <!-- <p class="goods__list--price">¥10,000<span>（税込）</span></p> -->
+            </li>
+            <li class="fadein06">
+                <div class="goods__list--img">
+                    <picture>
+                        <source srcset="./img/img_goods_new02.webp" type="image/webp">
+                        <img src="./img/img_goods_new02.jpg" alt="" width="1096" height="1500">
+                    </picture>
+                </div>
+                <p class="goods__list--name">クリアファイル</p>
+                <!-- <p class="goods__list--price">¥10,000<span>（税込）</span></p> -->
+            </li>
+            <li class="fadein07">
+                <div class="goods__list--img">
+                    <picture>
+                        <source srcset="./img/img_goods_new06.webp" type="image/webp">
+                        <img src="./img/img_goods_new06.jpg" alt="" width="1000" height="468">
+                    </picture>
+                </div>
+                <p class="goods__list--name">ステッカー<br>（ランダム9種）</p>
+                <!-- <p class="goods__list--price">¥10,000<span>（税込）</span></p> -->
+            </li>
+            <li class="fadein08">
+                <div class="goods__list--img">
+                    <picture>
+                        <source srcset="./img/img_goods_new05.webp" type="image/webp">
+                        <img src="./img/img_goods_new05.jpg" alt="" width="1000" height="468">
+                    </picture>
+                </div>
+                <p class="goods__list--name">反射ステッカー<br>（9種）</p>
+                <!-- <p class="goods__list--price">¥10,000<span>（税込）</span></p> -->
+            </li>
         </ul>
         <h3 class="goods__subttl2"><span>過去最多！<br>56種のどうぶつたちがラインナップ</span></h3>
 
         <ul class="goods__list fadein_block">
-            <li class="fadein05">
+            <li class="fadein01">
                 <div class="goods__list--img">
                     <picture>
                         <source srcset="./img/goods4.webp" type="image/webp">
                         <img src="./img/goods4.jpg" alt="" width="440" height="328">
                     </picture>
                 </div>
-                <p class="goods__list--name">アクリルスタンドシート</p>
+                <p class="goods__list--name">アクリルキーホルダーシート</p>
                 <!-- <p class="goods__list--price">¥10,000<span>（税込）</span></p> -->
             </li>
-            <li class="fadein06">
+            <li class="fadein02">
                 <div class="goods__list--img">
                     <picture>
                         <source srcset="./img/goods5.webp" type="image/webp">
@@ -364,18 +416,20 @@
                 <p class="goods__list--name">英語ポスター</p>
                 <!-- <p class="goods__list--price">¥10,000<span>（税込）</span></p> -->
             </li>
-            <li class="fadein07">
-                <div class="goods__list--img">
-                    <picture class="btn" id="goodsAccordionBtn">
-                        <source srcset="./img/goods6_new.webp" type="image/webp">
-                        <img src="./img/goods6_new.jpg" alt="" width="500" height="197">
-                    </picture>
-                </div>
+            <li class="fadein03">
+                <button class="modal-toggle btn-example" data-modal="modalOne">
+                    <div class="goods__list--img">
+                        <picture class="btn" id="">
+                            <source srcset="./img/goods6_new.webp" type="image/webp">
+                            <img src="./img/goods6_new.jpg" alt="" width="500" height="197">
+                        </picture>
+                    </div>
+                </button>
                 <p class="goods__list--name">ステッカー<br>（ランダム56種）</p>
                 <!-- <p class="goods__list--price">¥10,000<span>（税込）</span></p> -->
             </li>
 
-            <li class="fadein08">
+            <li class="fadein04">
                 <div class="goods__list--img">
                     <picture>
                         <source srcset="./img/goods8_new.webp" type="image/webp">
@@ -385,9 +439,117 @@
                 <p class="goods__list--name">マスキングテープ</p>
                 <!-- <p class="goods__list--price">¥10,000<span>（税込）</span></p> -->
             </li>
+            <li class="fadein05">
+                <button class="modal-toggle btn-example" data-modal="modalTwo">
+                    <div class="goods__list--img">
+                        <picture>
+                            <source srcset="./img/img_goods_tagkeysmall.webp" type="image/webp">
+                            <img src="./img/img_goods_tagkeysmall.jpg" alt="" width="600" height="600">
+                        </picture>
+                    </div>
+                </button>
+                <p class="goods__list--name">イニシャルキーホルダー<br>（ランダム56種）</p>
+                <!-- <p class="goods__list--price">¥10,000<span>（税込）</span></p> -->
+            </li>
+            <li class="fadein06">
+                <button class="modal-toggle btn-example" data-modal="modalThree">
+                    <div class="goods__list--img">
+                        <picture>
+                            <source srcset="./img/img_goods_acril.webp" type="image/webp">
+                            <img src="./img/img_goods_acril.jpg" alt="" width="600" height="600">
+                        </picture>
+                    </div>
+                </button>
+                <p class="goods__list--name">アクリルキーホルダー<br>（ランダム56種）</p>
+                <!-- <p class="goods__list--price">¥10,000<span>（税込）</span></p> -->
+            </li>
+            <li class="fadein07">
+                <div class="goods__list--img">
+                    <picture>
+                        <source srcset="./img/img_goods_new07.webp" type="image/webp">
+                        <img src="./img/img_goods_new07.jpg" alt="" width="730" height="1000">
+                    </picture>
+                </div>
+                <p class="goods__list--name">クリアファイル</p>
+                <!-- <p class="goods__list--price">¥10,000<span>（税込）</span></p> -->
+            </li>
         </ul>
+        
 
-        <div class="goods__list--zenbu" id="goodsAccordion">
+        <h3 class="goods__subttl2"><span>大人気！<br>撮り下ろし実写版アイテム</span></h3>
+        <ul class="goods__list fadein_block">
+            <li class="fadein01">
+                <div class="goods__list--img">
+                    <picture>
+                        <source srcset="./img/goods7b.webp" type="image/webp">
+                        <img src="./img/goods7b.jpg" alt="" width="1000" height="1000">
+                    </picture>
+                </div>
+                <p class="goods__list--name">アクリルキーホルダー<br>（ランダム9種）</p>
+                <!-- <p class="goods__list--price">¥10,000<span>（税込）</span></p> -->
+            </li>
+            <li class="fadein02">
+                <div class="goods__list--img">
+                    <picture>
+                        <source srcset="./img/goods8.webp" type="image/webp">
+                        <img src="./img/goods8.jpg" alt="" width="500" height="414">
+                    </picture>
+                </div>
+                <p class="goods__list--name pc">チェキ風アクリルキーホルダー<br>（ランダム9種）</p>
+                <p class="goods__list--name sp">チェキ風アクリルキーホルダー（ランダム9種）</p>
+                <!-- <p class="goods__list--price">¥10,000<span>（税込）</span></p> -->
+            </li>
+            <li class="fadein03">
+                <div class="goods__list--img">
+                    <picture>
+                        <source srcset="./img/goods11.webp" type="image/webp">
+                        <img src="./img/goods11.jpg" alt="" width="560" height="577">
+                    </picture>
+                </div>
+                <p class="goods__list--name">トートバッグ</p>
+                <!-- <p class="goods__list--price">¥10,000<span>（税込）</span></p> -->
+            </li>
+            <li class="fadein04">
+                <div class="goods__list--img">
+                    <img src="./img/goods9.jpg" alt="" width="500" height="750">
+
+                </div>
+                <p class="goods__list--name">写真集</p>
+                <!-- <p class="goods__list--price">¥10,000<span>（税込）</span></p> -->
+            </li>
+            <li class="fadein05">
+                <div class="goods__list--img">
+                    <picture>
+                        <source srcset="./img/img_goods_new03.webp" type="image/webp">
+                        <img src="./img/img_goods_new03.jpg" alt="" width="1000" height="681">
+                    </picture>
+                </div>
+                <p class="goods__list--name">ステッカー<br>（ランダム9種）</p>
+                <!-- <p class="goods__list--price">¥10,000<span>（税込）</span></p> -->
+            </li>
+            <li class="fadein06">
+                <button class="modal-toggle btn-example" data-modal="modalFour">
+                    <div class="goods__list--img">
+                        <picture>
+                            <source srcset="./img/img_goods_new04.webp" type="image/webp">
+                            <img src="./img/img_goods_new04.jpg" alt="" width="600" height="600">
+                        </picture>
+                    </div>
+                </button>
+
+                <p class="goods__list--name">ポスター</p>
+                <!-- <p class="goods__list--price">¥10,000<span>（税込）</span></p> -->
+            </li>
+        </ul>
+        <p class="access__noteblc--txt">※画像はイメージです。予告なく変更させていただく場合がございます。</p>
+    </div>
+</section>
+<div id="modalOne" class="modal">
+    <div class="modal-content">
+        <div class="modal-top">
+            <span class="modal-close">×</span>
+        </div>
+        <div class="modal-container">
             <h4 class="goods__list--zenbu-ttl"><span>ステッカー（ランダム56種）</span></h4>
             <div class="pc">
                 <div class="goods__list--zenbu-img">
@@ -410,118 +572,285 @@
                 </div>
             </div>
         </div>
+    </div>
+</div>
 
 
+<div id="modalTwo" class="modal">
+    <div class="modal-content">
+        <div class="modal-top">
+            <span class="modal-close">×</span>
+        </div>
+        <div class="modal-container">
+            <h4 class="goods__list--zenbu-ttl"><span>イニシャルキーホルダー（ランダム56種）</span></h4>
+            <div class="goods__list--zenbu-img">
+                <picture>
+                    <source srcset="./img/img_goods_tagkey.webp" type="image/webp">
+                    <img src="./img/img_goods_tagkey.jpg" alt="" width="1716" height="1740">
+                </picture>
+            </div>
+
+        </div>
+    </div>
+</div>
 
 
-        <h3 class="goods__subttl2"><span>大人気！<br>撮り下ろし実写版アイテム</span></h3>
-        <ul class="goods__list fadein_block">
-            <li class="fadein09">
-                <div class="goods__list--img">
-                    <picture>
-                        <source srcset="./img/goods7.webp" type="image/webp">
-                        <img src="./img/goods7.jpg" alt="" width="500" height="396">
-                    </picture>
+<div id="modalThree" class="modal">
+    <div class="modal-content">
+        <div class="modal-top">
+            <span class="modal-close">×</span>
+        </div>
+        <div class="modal-container">
+            <h4 class="goods__list--zenbu-ttl"><span>アクリルキーホルダー（ランダム56種）</span></h4>
+            <div class="goods__list--zenbu-img">
+                <picture>
+                    <source srcset="./img/img_goods_acrilbig.webp" type="image/webp">
+                    <img src="./img/img_goods_acrilbig.jpg" alt="" width="1800" height="1100">
+                </picture>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+<div id="modalFour" class="modal">
+    <div class="modal-content">
+        <div class="modal-top">
+            <span class="modal-close">×</span>
+        </div>
+        <div class="modal-container">
+            <h4 class="goods__list--zenbu-ttl"><span>ポスター</span></h4>
+            <div class="goods__list--zenbu-img">
+                <picture>
+                    <source srcset="./img/bigposter.webp" type="image/webp">
+                    <img src="./img/bigposter.jpg" alt="" width="1000" height="14347">
+                </picture>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+    <section class="area" id="area2">
+    <div class="blc__inner">
+        <!-- <h2 class="area__ttl" style="margin-bottom: 30px;">エリアマップ</h2> -->
+
+        <div class="area__spot area__spot1">
+            <!-- <h3 class="area__spot--ttl" id="spot3">SPOT3</h3> -->
+            <p class="area__spot--txt">デジタル<br>アトラクション</p>
+            <picture class="area__spot1--chara1">
+                <source srcset="./img/img_usagi.webp" type="image/webp">
+                <img src="./img/img_usagi.png" alt="うさぎさん" width="352" height="549">
+            </picture>
+            <picture class="area__spot1--chara2">
+                <source srcset="./img/img_usagi2.webp" type="image/webp">
+                <img src="./img/img_usagi2.png" alt="うさぎさん" width="436" height="676">
+            </picture>
+            <div class="area__spot1--opacity">
+                <div class="area__spot1--blc">
+
+                    <div class="area__spot1--blc-small area__spot1--blc-small1">
+                        <div class="area__spot1--blc-img">
+                            <div class="area__spot1--blc-imgtest">
+                                <picture>
+                                    <source srcset="./img/comingsoon.webp" type="image/webp">
+                                    <img src="./img/comingsoon.png" alt="" width="1243" height="218">
+                                </picture>
+                            </div>
+                        </div>
+                        <p class="area__spot1--blc-txt">たべっ子どうぶつのかくれんぼ</p>
+                        <p class="area__spot1--blc-txt2">
+                            かくれんぼしている「たべっ子どうぶつ」のどうぶつたちと白戸家のお父さんを見つけるアトラクション。テーマパーク内に設置されたパネルを探して、パネルに掲載されたQRコードに「AR
+                            SQUARE」アプリをダウンロードしたスマートフォンのカメラをかざすと、かわいいARフィギュア（全10種）がダウンロードできます。ダウンロードしたARフィギュアは撮影してお楽しみいただけます。
+                        </p>
+                    </div>
+                    <div class="area__spot1--blc-small area__spot1--blc-small2">
+                        <div class="area__spot1--blc-img">
+                            <div class="area__spot1--blc-imgtest">
+                                <picture>
+                                    <source srcset="./img/comingsoon.webp" type="image/webp">
+                                    <img src="./img/comingsoon.png" alt="" width="1243" height="218">
+                                </picture>
+                            </div>
+                        </div>
+                        <p class="area__spot1--blc-txt">動きだす たべっ子どうぶつ</p>
+                        <p class="area__spot1--blc-txt2">会場で配布予定の「たべっ子どうぶつ」のどうぶつたちが描かれたノベルティ（コースター）に「AR
+                            SQUARE」アプリをかざすと、どうぶつたちが動き出す不思議な体験をお楽しみいただけます。どうぶつたちが動く様子はスマートフォンで撮影も可能です。<br>
+                            <a href="https://37ud.adj.st/open?adj_t=u4sd444&adj_deep_link=arsquare%3A%2F%2Fopen&adj_campaign=media-release&adj_adgroup=tabekko&adj_creative=app&adj_fallback=https%3A%2F%2Fplay.google.com%2Fstore%2Fapps%2Fdetails%3Fid%3Djp.softbank.mb.sbarservice%26hl%3Dja%26gl%3DUS"
+                                rel="noopener noreferrer" target="_blank">AR SQUAREアプリダウンロードはこちら</a></p>
+                        <p class="area__spot1--blc-note">※AR 対応機種<br>iPhone：iOS 13.0以降（iPhone 8以降）／ Android：Android
+                            9.0以降</p>
+                        <p class="area__spot1--blc-note">※アプリケーションのダウンロード及びご利用には別途通信料がかかります</p>
+                        <p class="area__spot1--blc-note">※ノベルティーには限りがあります</p>
+                    </div>
                 </div>
-                <p class="goods__list--name">アクリルキーホルダー<br>（ランダム9種）</p>
-                <!-- <p class="goods__list--price">¥10,000<span>（税込）</span></p> -->
-            </li>
-            <li class="fadein10">
-                <div class="goods__list--img">
-                    <picture>
-                        <source srcset="./img/goods8.webp" type="image/webp">
-                        <img src="./img/goods8.jpg" alt="" width="500" height="414">
-                    </picture>
+            </div>
+            <div class="area__spot1--topblc">
+                <div class="area__spot1--topblc--wrapper">
+                    <div class="area__spot1--topblc-img">
+                        <div class="area__spot1--blc-img">
+                            <div class="area__spot1--blc-imgtest">
+                                <picture>
+                                    <source srcset="./img/comingsoon.webp" type="image/webp">
+                                    <img src="./img/comingsoon.png" alt="" width="1243" height="218">
+                                </picture>
+                            </div>
+                        </div>
+                        <p class="area__spot1--blc-txt">360°VRアトラクション(MetaWalkers)<br>「たべっ子どうぶつマジカルダンスシアター」</p>
+                        <p class="area__spot1--blc-txt2">
+                            ここでしか見られない「たべっ子どうぶつ」のどうぶつたちによる不思議なショーを、360度3Dアニメーションでお楽しみいただけます。</p>
+                        <span class="sp">
+                            <p class="area__spot1--blc-note">※料金：無料</p>
+                            <p class="area__spot1--blc-note">※対応年齢：4歳以上</p>
+                            <p class="area__spot1--blc-note">※体験時間目安：1~2分</p>
+                        </span>
+                        <span class="pc">
+                            <p class="area__spot1--blc-note">※料金：無料　※対応年齢：4歳以上　※体験時間目安：1~2分</p>
+                        </span>
+                        <p class="area__spot1--blc-note">※ご視聴にあたって3Dメガネをご装着いただきます。3Dメガネは使用ごとに消毒を実施します。</p>
+                        <p class="area__spot1--blc-note">※混雑時はご体験までお時間いただく可能性がございます。あらかじめご了承ください</p>
+                    </div>
                 </div>
-                <p class="goods__list--name pc">チェキ風アクリルキーホルダー<br>（ランダム9種）</p>
-                <p class="goods__list--name sp">チェキ風アクリルキーホルダー（ランダム9種）</p>
-                <!-- <p class="goods__list--price">¥10,000<span>（税込）</span></p> -->
-            </li>
-            <li class="fadein11">
-                <div class="goods__list--img">
-                    <picture>
-                        <source srcset="./img/goods11.webp" type="image/webp">
-                        <img src="./img/goods11.jpg" alt="" width="560" height="577">
-                    </picture>
-                </div>
-                <p class="goods__list--name">トートバッグ</p>
-                <!-- <p class="goods__list--price">¥10,000<span>（税込）</span></p> -->
-            </li>
-            <li class="fadein12">
-                <div class="goods__list--img">
-                    <img src="./img/goods9.jpg" alt="" width="500" height="750">
-
-                </div>
-                <p class="goods__list--name">写真集</p>
-                <!-- <p class="goods__list--price">¥10,000<span>（税込）</span></p> -->
-            </li>
-
-
-        </ul>
-        <p class="access__noteblc--txt">※画像はイメージです。予告なく変更させていただく場合がございます。</p>
+            </div>
+        </div>
     </div>
 </section>
+
     <section class="tiket" id="tiket">
     <div class="blc__inner">
         <h2 class="tiket__ttl">チケット</h2>
-            <picture class="tiket__chara">
-                <source srcset="./img/img_wani.webp" type="image/webp" ><!-- 上記に当てはまらずWebP対応なら表示 -->
-                <img src="./img/img_wani.png" alt="わにさん" width="504" height="346"><!-- 上記に当てはまらずWebP非対応なら表示 -->
-            </picture>
+        <picture class="tiket__chara">
+            <source srcset="./img/img_wani.webp" type="image/webp"><!-- 上記に当てはまらずWebP対応なら表示 -->
+            <img src="./img/img_wani.png" alt="わにさん" width="504" height="346"><!-- 上記に当てはまらずWebP非対応なら表示 -->
+        </picture>
 
-            <ul class="tiket__tab">
-                <li class="tab active">チケット情報</li>
-                <li class="tab">来場者特典</li>
-            </ul>
-            <ul class="tiket__tabmain">
-                <li class="yel active panel">
-                    <div class="tiket__blc">
-                        <h3 class="tiket__blc--ttl">チケット情報</h3>
+        <ul class="tiket__tab">
+            <li class="tab active">チケット情報</li>
+            <li class="tab">来場者特典</li>
+        </ul>
+        <ul class="tiket__tabmain">
+            <li class="yel active  panel">
+                <div class="tiket__blc">
+                    <h3 class="tiket__blc--ttl">チケット情報</h3>
 
-                        <div class="tiket__blc--small">
-                            <p class="tiket__blc--smalltxt">小学生以下：無料<br>
-                                中高校生：500円<br>
-                                大学生以上：800円</p>
-                            <p class="tiket__txt2">※小学生以下は入場無料／ただし保護者の同伴が必要です。</p>
-                        </div>
-                        <!-- <h4 class="tiket__subttl">事前予約制</h4> -->
-                        <p class="tiket__notes">ローソンチケットにて予約受付中!</p>
+                    <div class="tiket__blc--small">
+                        <p class="tiket__blc--smalltxt">小学生以下：無料<br>
+                            中高校生：500円<br>
+                            大学生以上：800円</p>
+                        <p class="tiket__txt2">※小学生以下は入場無料／ただし保護者の同伴が必要です。</p>
+                    </div>
+                    <!-- <h4 class="tiket__subttl">事前予約制</h4> -->
+                    <p class="tiket__notes">ローソンチケットにて予約受付中!</p>
 
-                        <div class="tiket__lowson--wrap">
-                            <a href="https://l-tike.com/tabekko" target="_blank" rel="noopener norefferr"
+                    <div class="tiket__lowson--wrap">
+                        <a href="https://l-tike.com/tabekko" target="_blank" rel="noopener norefferr"
                             class="tiket__lowson">ローソンチケット</a>
-   
-                        </div>
-                        <div class="tiket__blc2">
-                            <p class="tiket__txt">・販売開始日:2/25(土) AM8:00〜</p>
-                            <p class="tiket__txt">・60分入れ替え制となります。</p>
-                            <p class="tiket__txt">・各回、入場制限数に到達していない場合のみ、会場にて当日券を販売いたします。<br>
+
+                    </div>
+                    <div class="tiket__blc2">
+                        <p class="tiket__txt">・販売開始日:2/25(土) AM8:00〜</p>
+                        <p class="tiket__txt">・60分入れ替え制となります。</p>
+                        <p class="tiket__txt">・各回、入場制限数に到達していない場合のみ、会場にて当日券を販売いたします。<br>
                             その他、注意事項などは、ローソンチケットの販売ページよりご確認いただけます様お願いいたします。
-                            </p>
+                        </p>
+                    </div>
+                </div>
+                <picture class="tiket__neko">
+                    <source srcset="./img/img_neko.webp" type="image/webp"><!-- 上記に当てはまらずWebP対応なら表示 -->
+                    <img src="./img/img_neko.png" alt="ねこさん" width="498" height="939"><!-- 上記に当てはまらずWebP非対応なら表示 -->
+                </picture>
+            </li>
+            <li class="tiket__tokuten panel">
+                <div class="tiket__blc">
+                    <h3 class="tiket__blc--ttl">来場者特典</h3>
+                    <div class="tiket__tokuten--swiper-wrapper">
+                        <!-- Slider main container -->
+                        <div class="swiper tiket__tokuten--swiper">
+                            <!-- Additional required wrapper -->
+                            <div class="swiper-wrapper">
+                                <!-- Slides -->
+                                <div class="swiper-slide">
+                                    <h4 class="tiket__tokuten--subttl">入場特典</h4>
+                                    <div class="tiket__tokuten--img2">
+                                        <picture class="">
+                                            <source srcset="./img/img_tokuten00.webp" type="image/webp">
+                                            <!-- 上記に当てはまらずWebP対応なら表示 -->
+                                            <img src="./img/img_tokuten00.jpg" alt="来場者特典1" width="1000" height="1000">
+                                            <!-- 上記に当てはまらずWebP非対応なら表示 -->
+                                        </picture>
+                                    </div>
+
+                                    <p class="tiket__tokuten--txt">「AR SQUARE」アプリをかざすと「動きだす たべっ子どうぶつ」が楽しめるARコースターをプレゼント！</p>
+                                </div>
+                                <div class="swiper-slide">
+                                    <h4 class="tiket__tokuten--subttl">グッズ特典</h4>
+                                    <div class="tiket__tokuten--img2">
+                                        <picture class="">
+                                            <source srcset="./img/img_tokuten02.webp" type="image/webp">
+                                            <!-- 上記に当てはまらずWebP対応なら表示 -->
+                                            <img src="./img/img_tokuten02.jpg" alt="来場者特典2" width="1000" height="1000">
+                                            <!-- 上記に当てはまらずWebP非対応なら表示 -->
+                                        </picture>
+                                    </div>
+                                    <p class="tiket__tokuten--txt">グッズ1,500円（税込）ご購入ごとに「たべっ子どうぶつLANDオリジナルバルーン」をプレゼント！（色はお選びいただけません）</p>
+                                </div>
+                                <div class="swiper-slide">
+                                    <h4 class="tiket__tokuten--subttl">カフェ特典</h4>
+                                    <div class="tiket__tokuten--img2">
+
+                                        <picture class="">
+                                            <source srcset="./img/img_tokuten03.webp" type="image/webp">
+                                            <!-- 上記に当てはまらずWebP対応なら表示 -->
+                                            <img src="./img/img_tokuten03.jpg" alt="来場者特典3" width="1000" height="1000">
+                                            <!-- 上記に当てはまらずWebP非対応なら表示 -->
+                                        </picture>
+                                    </div>
+
+                                    <p class="tiket__tokuten--txt">フード&ドリンク1,500円（税込）ご購入ごとに「じゃんけんステッカー」をプレゼント！（絵柄はお選びいただけません）</p>
+                                </div>
+                                <div class="swiper-slide">
+                                    <h4 class="tiket__tokuten--subttl">カフェ特典</h4>
+                                    <div class="tiket__tokuten--img2">
+
+                                        <picture class="">
+                                            <source srcset="./img/img_tokuten01.webp" type="image/webp">
+                                            <!-- 上記に当てはまらずWebP対応なら表示 -->
+                                            <img src="./img/img_tokuten01.jpg" alt="来場者特典3" width="1000" height="1000">
+                                            <!-- 上記に当てはまらずWebP非対応なら表示 -->
+                                        </picture>
+                                    </div>
+
+                                    <p class="tiket__tokuten--txt">カフェスペースで「たべっ子どうぶつ間違い探し」を配布！ご自由にお持ち帰りください♪</p>
+                                </div>
+                                <div class="swiper-slide">
+                                    <h4 class="tiket__tokuten--subttl">東京ドームシティ<br>アトラクションズコラボ</h4>
+                                    <div class="tiket__tokuten--img2">
+                                        <picture class="">
+                                            <source srcset="./img/img_tokuten04.webp" type="image/webp">
+                                            <!-- 上記に当てはまらずWebP対応なら表示 -->
+                                            <img src="./img/img_tokuten04.jpg" alt="来場者特典4" width="1000" height="1000">
+                                            <!-- 上記に当てはまらずWebP非対応なら表示 -->
+                                        </picture>
+                                    </div>
+
+                                    <p class="tiket__tokuten--txt">東京ドームシティアトラクションズのチケット購入時にたべっ子どうぶつLANDの半券提示で「名刺風カード」をプレゼント！（絵柄はお選びいただけません）</p>
+                                </div>
+
+                            </div>
+                            <!-- If we need pagination -->
+                            <div class="swiper-pagination"></div>
+
+                            <!-- If we need navigation buttons -->
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+
+    
                         </div>
                     </div>
-                    <picture class="tiket__neko">
-                        <source srcset="./img/img_neko.webp" type="image/webp" ><!-- 上記に当てはまらずWebP対応なら表示 -->
-                        <img src="./img/img_neko.png" alt="ねこさん" width="498" height="939"><!-- 上記に当てはまらずWebP非対応なら表示 -->
-                    </picture>
-                </li>
-                <li class="tiket__tokuten panel">
-                    <div class="tiket__blc">
-                        <h3 class="tiket__blc--ttl">来場者特典</h3>
-
-                        <h4 class="tiket__tokuten--subttl">来場者特典がもらえる！</h4>
-                        <div class="tiket__tokuten--img">
-                            <picture>
-                                <source srcset="./img/comingsoon.webp" type="image/webp" ><!-- 上記に当てはまらずWebP対応なら表示 -->
-                                <img src="./img/comingsoon.png" alt="coming soon" width="1243" height="218"><!-- 上記に当てはまらずWebP非対応なら表示 -->
-                            </picture>
-                
-                        </div>
-                        <p class="tiket__tokuten--txt">お楽しみに！</p>
-
-                    </div>
-                </li>
-            </ul>
+                </div>
+            </li>
+        </ul>
 
     </div>
 </section>
@@ -560,6 +889,7 @@
         </div>
     </div>
 </section>
+
     <section class="faq" id="faq">
 
     
@@ -898,7 +1228,22 @@
     </div>
 </footer>
 
-  <script src="./assets/model.js"></script>
+  <script src="./assets/model0308.js"></script>
+
+  <script>
+    var swiper = new Swiper(".tiket__tokuten--swiper", {
+      loop: true,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      pagination: {
+        el: ".swiper-pagination",
+      }
+    });
+  </script>
+
+
 </body>
 </html>
 
