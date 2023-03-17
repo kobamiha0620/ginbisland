@@ -11,7 +11,6 @@
         padding: 57px 0;
         position: relative;
     }
-
     &__test {
         background-color: #F9D7E6;
         height: 200px;
@@ -109,7 +108,7 @@
 
         &--name {
             @include var.fz(14);
-            margin: 0 0 10px;
+            margin: 0 0;
             line-height: 1.5;
             text-align: center;
         }
@@ -118,9 +117,12 @@
             @include var.fz(14);
             line-height: 1;
             margin: 0;
-
+            text-align: center;
+            margin: 5px 0 10px;
             span {
                 font-size: 0.8em;
+                display: inline-block;
+                margin-left: -2px;
             }
         }
         &--zenbu{
@@ -377,5 +379,138 @@
           opacity: 1;
       }
   }
+
+
+
+  //追記
+  //ポスター部分
+#modalFour{
+    $color_1: #FF0000;
+    $color_2: #FFF;
+    $background-color_1: rgba(0, 0, 0, 0.7);
+    .swiper{
+    }
+    .goods__list--price{
+        text-align: center;
+        padding-bottom: 36px;
+    }
+    .swiper-pagination{
+        bottom: -5px;
+    }
+
+    .modal-container {
+        .img {
+            background: #f1f1f1;
+            margin-bottom: 15px;
+        }
+        p {
+            margin-bottom: 10px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+    .modal-content {
+        padding: 20px 25px;
+        width: 90%;
+        max-width: 800px;
+        max-height: 90vh;
+    }
+    .modal-top {
+        display: inline-block;
+        position: absolute;
+        right: 5px;
+        top: 5px;
+    }
+    .modal-close {
+        color: $color_1;
+        text-decoration: none;
+        font-size: 2rem;
+        line-height: 1;
+        padding: 0 8px;
+        &:hover {
+            text-decoration: none;
+            cursor: pointer;
+        }
+        &:focus {
+            text-decoration: none;
+            cursor: pointer;
+        }
+    }
+    .modal-title {
+        color: $color_2;
+    }
+    @media screen and (max-width: var.$spbp) {
+        .modal-content {
+            padding: 20px 10px;
+            width: 90%;
+            max-width: 100%;
+            max-height: 90vh;
+        }
+        .swiper-button-next{
+            right: 0;
+        }
+        .swiper-button-prev{
+            left: 0;
+        }
+    }
+
+}
+.goods__swiper{
+    &--img{
+        width:  67vh;
+        max-width: 480px;
+        height: 67vh;
+        max-height: 480px;
+        margin: 0 auto;
+        // background: var.$yel;
+        img{
+            width: 100%;
+            height: auto;
+        }
+    }
+    &--subttl{
+        padding-top: 50px;
+        margin-bottom: 0;
+        br{
+            display: none;
+        }
+    }
+    &__swiper{
+        &--wrapper{
+            padding: 0 16px;
+        }
+    }
+    &--txt{
+        margin-bottom: 40px;
+    }
+    @media screen and (max-width: var.$spbp) {
+        &--subttl{
+            br{
+                display: block;
+            }
+        }
+        &--wrapper{
+            padding: 0 0;
+        }
+        &--img{
+            padding: 0 30px;
+            width:  100%;
+            max-width: 500px;
+            height: 100%;
+            max-height: 500px;
+            margin: 0 auto;
+            // background: var.$yel;
+            img{
+                width: 100%;
+                height: auto;
+            }
+        }
+
+    }
+}
+.swiper--wrapper {
+    background-color: #FFF;
+}
 
 @include var.webpBg('.goods__ttl', var.$imgpath+'ttl_goods', 'png');

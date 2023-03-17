@@ -57,7 +57,7 @@ var pageinit = {
 />
 
 <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-<link rel="stylesheet" href="./assets/style0306b.css">
+<link rel="stylesheet" href="./assets/style0315.css">
 
   <title>たべっ子どうぶつ LAND - ギンビス</title>
 </head>
@@ -69,7 +69,7 @@ var pageinit = {
     <%- include('./module/area2'); %>
     <%- include('./module/cafe'); %>
     <%- include('./module/goods'); %>
-    <%- include('./module/degitalarea'); %>
+
 
     <%- include('./module/tiket'); %>
     <%- include('./module/access'); %>
@@ -84,6 +84,18 @@ var pageinit = {
 
   <script>
     var swiper = new Swiper(".tiket__tokuten--swiper", {
+      loop: true,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      pagination: {
+        el: ".swiper-pagination",
+      }
+    });
+  </script>
+  <script>
+    var swiper = new Swiper(".goods__swiper", {
       loop: true,
       navigation: {
         nextEl: ".swiper-button-next",
