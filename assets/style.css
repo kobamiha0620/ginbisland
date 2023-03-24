@@ -974,6 +974,95 @@
   background-image: url(../img/ttl_cafe.webp);
 }
 
+.campaignheader {
+  background: url("../img/campaign/top_pc.png");
+  background-size: 100% auto;
+  font-size: 0;
+  line-height: 0;
+  width: 100vw;
+  padding-top: 59.8vw;
+}
+@media screen and (max-width: 768px) {
+  .campaignheader {
+    background: url("../img/campaign/top_sp.jpg");
+    padding-top: 167.4vw;
+    background-size: 100% auto;
+  }
+}
+
+.campaign {
+  background: url("../img/campaign/bg_campaign.jpg");
+  background-size: 100% auto;
+  background-repeat: repeat-y;
+  padding-bottom: 100px;
+}
+.campaign__inner {
+  width: 700px;
+  margin: 0 auto;
+  border: solid 5px #89d4db;
+  border-radius: 20px;
+  padding: 65px 50px 50px;
+  background-color: #FFF;
+}
+.campaign__ttl {
+  text-align: center;
+  font-weight: 900;
+  font-size: 2.5rem;
+  letter-spacing: 1px;
+  margin: 0 auto 30px;
+  line-height: 1.1;
+}
+.campaign__subttl {
+  font-size: 1.5rem;
+  line-height: 1;
+  font-weight: 900;
+  letter-spacing: 1px;
+  margin: 0 auto 30px;
+  text-align: center;
+}
+.campaign__subttl br {
+  display: none;
+}
+.campaign__txt {
+  font-size: 0.9375rem;
+  line-height: 1.5;
+}
+.campaign__txt a {
+  color: #00A0E9;
+}
+@media screen and (max-width: 768px) {
+  .campaign {
+    background: url("../img/campaign/bg_campaign_sp.jpg");
+    background-repeat: repeat-y;
+    background-size: 100% auto;
+    padding: 0 6vw 10vw;
+  }
+  .campaign__inner {
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 20px;
+    padding: 10vw 6vw 10vw;
+  }
+  .campaign__ttl {
+    font-size: 1.875rem;
+    letter-spacing: 1px;
+    margin: 0 auto 5vw;
+  }
+  .campaign__subttl {
+    font-size: 1.125rem;
+    line-height: 1.6;
+    letter-spacing: 1px;
+    margin: 0 auto 5vw;
+  }
+  .campaign__subttl br {
+    display: block;
+  }
+  .campaign__txt {
+    font-size: 0.8125rem;
+    line-height: 1.5;
+  }
+}
+
 .faq {
   background-color: #FFCD7B;
 }
@@ -1877,6 +1966,24 @@
 .header__chara img {
   width: 100%;
   height: auto;
+}
+.header__campaign {
+  margin: 20px auto;
+  width: 300px;
+  display: block;
+}
+.header__campaign:hover {
+  opacity: 0.7;
+}
+.header__campaign img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+@media screen and (max-width: 768px) {
+  .header__campaign {
+    width: 86vw;
+  }
 }
 .header__link {
   position: fixed;

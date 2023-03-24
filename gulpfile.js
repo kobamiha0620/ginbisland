@@ -85,7 +85,7 @@ function compile(done) {
 
 //   }"../assets/css/
   const watchTask = (done) => {
-	watch(["./**", "!./assets/style.css", "!./index.html","!./news.html", "!./module/**",  "!./assets/**"], series(ejsmode, compile, bsReload));
+	watch(["./**", "!./index.html","!./campaign.html", "!./module/**",  "!./assets/**"], series(ejsmode, compile, bsReload));
 
 	done();
 };
