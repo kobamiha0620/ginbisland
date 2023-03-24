@@ -1,6 +1,6 @@
 @use "./module/variable"as var;
 
-.faq{
+.faq, .notion{
     background-color: var.$orange;
     .blc__inner{
         padding: 57px 0;
@@ -233,3 +233,30 @@
 
 }
 
+
+
+.notion{
+    background-color: #b6f1fc;
+    &__ttl{
+        background-image: url('../img/ttl_notion.png');
+        background-repeat: no-repeat;
+        white-space: nowrap;
+        text-indent: -9999px;
+        margin: 0 auto 30px;
+        background-size: 100% auto;
+        width: 200px;
+        height: 52px;
+        font-size: 0;
+    }
+    .faq__blc--txt{
+        display: block;
+    }
+    .faq__blc--a{
+        .faq__blc--a-inner{
+            background: url('../img/bg_notion.svg') repeat-x;
+            background-size: 10px 2px;
+            background-position: top 0 right 0;
+        }
+    }
+
+}
