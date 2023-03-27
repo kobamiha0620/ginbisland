@@ -253,10 +253,18 @@
     }
     .faq__blc--a{
         .faq__blc--a-inner{
+            display: block;
             background: url('../img/bg_notion.svg') repeat-x;
             background-size: 10px 2px;
             background-position: top 0 right 0;
         }
     }
-
+    .faq__blc--txt{
+        &.last{
+            margin-top: 20px;
+        }
+        &.top{
+            margin-bottom: 20px;
+        }
+    }
 }
