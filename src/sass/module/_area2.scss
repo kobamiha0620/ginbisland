@@ -1,6 +1,23 @@
 @use "./module/variable"as var;
 
+.fourdh{
+    margin: 20px auto 5px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 1;
+    span{
+        background: #fc8424;
+        color: #FFF;
+        padding: 3px;
+        display: block;
 
+    }
+    &.ar{
+        span{
+            background: #7fd407;
+        }
+    }
+}
 
 .area {
     background-color: var.$yel;
@@ -733,12 +750,15 @@
     // display: inline-block;
     // border: solid 4px #FFCD7B;
     // position: relative;
-
+    margin-top: 0;
+    margin: 0 auto;
     @media screen and (max-width: var.$spbp) {
         width: 100%;
         display: block;
         padding-top: 20px;
         margin-top: 50px;
+        margin: 0 auto;
+
     }
 
     &__wrapper {
@@ -750,9 +770,12 @@
     &__ttl {
         text-align: center;
         border-radius: 20px;
-        padding: 10px 20px;
+        padding: 10px 30px;
         white-space: nowrap;
-        background: #FFCD7B;
+        background: #FFBD00;
+        border: solid 3px #FF9A00;
+        color: #FFF;
+        font-weight: bold;
         // position: absolute;
         // top: -18px;
         // left: 50%;
@@ -853,8 +876,7 @@
 
     &__ttl{
         text-decoration: none;
-        color: #000;
-        margin: 30px auto 0; 
+        margin: 0 auto 0; 
         display: block;
         padding: 20px;
         border-radius: 40px;
@@ -866,10 +888,168 @@
 @media screen and (max-width: 768px){
     .questionnaire {
         margin-top: 0;
+        padding-top: 0;
         &__ttl{
             line-height: 1.2;
             padding-top: 10px;
             padding-bottom: 10px;
+        }
+    }
+}
+
+
+//追記
+.area{
+    .accordion{
+        display: none;
+        &__ttl{
+            cursor: pointer;
+            text-align: center;
+            span{
+                background: #7fd407;                    
+                border-radius: 40px;
+                display: inline-block;
+                padding: 10px 50px;
+                color: #FFF;
+            }
+            &:hover{
+                opacity: 0.7;
+            }
+            &.disable{
+                display: none;
+            }
+            &+.fourdh02{
+                span{
+                    background: #fc8424;
+                }
+            }
+        }
+    }
+    &__noteblc{
+        margin-top: 30px;
+        padding-bottom: 20px;
+        // padding-top: 20px;
+    }
+    @media screen and (max-width: var.$spbp) {
+        .area__spot1{
+            padding-right: 6vw;
+            padding-left: 6vw;
+        }
+        .accordion{
+            &__ttl{
+                cursor: pointer;
+                margin-top: 10px;
+                margin-bottom: 9vw;
+                span{
+                    background: #7fd407;                    
+                    border-radius: 40px;
+                    display: block;
+                    padding: 10px 50px;
+                    color: #FFF;
+                }
+                &:hover{
+                    opacity: 1;
+                }
+
+            }
+        }
+    }
+
+}
+.accordion__ttl{
+    margin: 0 auto;
+    
+    &.fourdh02{
+        span{
+            background: #fc8424;
+
+        }
+    }
+}
+.area__special{
+    border: solid 4px rgb(254,246,84);
+    border-radius: 6px;
+    margin-top: 30px;
+    .area__spot1--blc-txt2{
+        text-align: left;
+    }
+    &--img{
+        max-width: 260px;
+        margin: 0 auto 20px;
+        img{
+            width: 100%;
+            height: auto;
+        }
+    }
+    &--ttl{
+        background: rgb(254,246,84);
+        margin: 0;
+        text-align: center;
+        font-weight: bold;
+        padding: 10px 0;
+        
+        br{
+            display: none;
+        }
+    }
+    &--inner{
+        padding: 20px 20px 40px;
+
+    }
+    @media screen and (max-width: var.$spbp) {
+        margin-top: 30px;
+        .area__spot1--blc-txt2{
+            text-align: left;
+        }
+        &--img{
+            max-width: 100%;
+            margin: 0 auto 20px;
+            img{
+                width: 100%;
+                height: auto;
+            }
+        }
+        &--ttl{
+            padding: 10px 0;
+            
+            br{
+                display: block;
+            }
+        }
+        &--inner{
+            padding: 20px 20px 40px;
+    
+        }
+    }
+}
+.area__special02{
+    margin: 50px auto 40px;
+    img{
+        width: 100%;
+        height: auto;
+    }
+}
+.area__special02--accordion{
+    width: 100%;
+    margin: 0 auto;
+    .area__spot--dl2{
+        width: 50%;
+        margin: 0 auto;
+
+    }
+    @media screen and (max-width: var.$spbp) {
+        width: 100%;
+        padding-top: 30px;
+        .area__spot--dl2{
+            width: 80%;
+            margin: 0 auto;
+    
+        }
+        .questionnaire{
+            padding-top: 0;
+        }
+        .area__noteblc{
+            padding-bottom: 0;
         }
     }
 }

@@ -41,11 +41,18 @@ $(function(){
     $(this).toggleClass("open");
   });
 
-  $('#goodsAccordionBtn').on('click', function(){
+  $('.accordion__ttl').click(function(){
     console.log('test');
+    $(this).next('.accordion').slideToggle();
+    $(this).addClass("disable");
+  });
+
+
+  $('#goodsAccordionBtn').on('click', function(){
       $('#goodsAccordion').slideToggle();
   }); 
   //たぶ
+
   $('.tiket__tab .tab').on('click', function() {
     $('.tab, .panel').removeClass('active');
   

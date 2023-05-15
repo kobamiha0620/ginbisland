@@ -310,6 +310,7 @@
 
 }
 
+
 @include var.webpBg('.area__ttl', var.$imgpath+'ttl_area', 'png');
 @include var.webpBg('#spot1', var.$imgpath+'spot1-icon', 'png');
 @include var.webpBg('#spot2', var.$imgpath+'spot2-icon', 'png');
