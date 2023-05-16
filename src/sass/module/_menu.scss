@@ -79,7 +79,7 @@ $background-color_1: #666;
 /*×に変化*/
 .navBtn {
     position: fixed;
-    z-index: 9999;
+    z-index: 10;
     top: 35px;
     right: 25px;
     cursor: pointer;
@@ -349,7 +349,7 @@ $background-color_1: #666;
         }
         &__link{
             position: fixed;
-            z-index: 100;
+            z-index: 2;
             right: 50%;
             left: 50%;
             right: auto;
